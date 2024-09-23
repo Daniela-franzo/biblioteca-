@@ -1,0 +1,26 @@
+create database BIBLIOTECA;
+USE BIBLIOTECA;
+CREATE TABLE AUTORES (
+AUTOR_ID INT auto_increment PRIMARY KEY,
+NOME varchar(150) NOT NULL,
+NACIONALIDADE varchar(130)
+);
+
+create table LIVROS (
+LIVRO_ID INT auto_increment PRIMARY key,
+TITULO varchar(290) NOT NULL,
+AUTOR_ID INT,
+ANOPUBLICAÇÃO year,
+GENERO varchar(280),
+foreign key (AUTOR_ID) references AUTORES(AUTOR_ID)
+);
+
+create table EMPRESTIMOS (
+EMPRESTIMO_ID int auto_increment primary key,
+LIVRO_ID int,
+DATAEMPRESTIMO date NOT NULL,
+DATADEVOLUCAO date,
+NOMEUSUARIO varchar(300) NOT NULL,
+foreign key (LIVRO_ID) references LIVROS(LIVRO_ID)
+);
+
