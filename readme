@@ -1,0 +1,49 @@
+# Sistema de Biblioteca
+
+Este é um sistema simples de gerenciamento de biblioteca que utiliza um banco de dados para armazenar informações sobre autores, livros e empréstimos.
+
+## Estrutura do Banco de Dados
+
+O banco de dados contém três tabelas:
+
+1. **Autores**
+   - AutorID (chave primária)
+   - Nome
+   - Nacionalidade
+
+2. **Livros**
+   - LivroID (chave primária)
+   - Titulo
+   - AutorID (chave estrangeira)
+   - AnoPublicacao
+   - Genero
+
+3. **Emprestimos**
+   - EmprestimoID (chave primária)
+   - LivroID (chave estrangeira)
+   - DataEmprestimo
+   - DataDevolucao
+   - NomeUsuario
+
+## Instruções de Uso
+
+1. **Criar o Banco de Dados**
+   Execute o script SQL para criar o banco de dados e as tabelas.
+
+2. **Inserir Dados**
+   Use os comandos SQL fornecidos para inserir dados nas tabelas de autores, livros e empréstimos.
+
+3. **Consultar Dados**
+   Realize consultas para listar livros, autores e empréstimos abertos.
+
+4. **Atualizar e Excluir Dados**
+   Execute os comandos de atualização e exclusão conforme necessário.
+
+## Requisitos
+
+- MySQL ou MariaDB
+- Acesso a um cliente SQL
+
+## Licença
+
+Este projeto está licenciado sob a MIT License. Consulte o arquivo LICENSE para mais detalhes.
