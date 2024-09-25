@@ -1,0 +1,11 @@
+# Ignorar arquivos de configuração do MySQL
+*.sql
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de backup
+*.bak
+
+# Ignorar diretórios de banco de dados
+db/
